@@ -1,6 +1,5 @@
 #include <cmath>
 #include <unittest++/UnitTest++.h>
-using namespace std;
 
 unsigned int quersumme(unsigned zahl) {
 	int sum = 0;
