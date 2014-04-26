@@ -9,7 +9,7 @@ int main() //Typ -> int, Funktion main()
 	int const two = 2; // Variable = two, Typ = int const, Wert = 2; Objekt = int const two = 2;
 	double e = a/two; // Variable e, Typ = double, Wert = a/two, Objekt =double e a/two
 
-	two = d; //Neuzuweisung two ist jetzt d
+	two = d; //Neuzuweisung two ist jetzt d => error da two const ist und darf nicht verändert werden
 
 	return 0;
 }
