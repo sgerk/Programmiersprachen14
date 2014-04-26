@@ -19,7 +19,7 @@ SUITE(describe_quersumme)
 	{
 		CHECK_EQUAL(3, quersumme(12));
 	}
-	TEST(factorial_of_555_should_be_15)
+	TEST(quersumme_of_555_should_be_15)
 	{
 		CHECK_EQUAL(15, quersumme(555));
 	}
