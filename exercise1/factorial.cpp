@@ -1,7 +1,12 @@
 #include <cmath>
-#include <unittest++/UnitTest++.h> // for ubuntu
+#include <unittest++/UnitTest++.h>
 
-unsigned factorial(unsigned n);
+unsigned int factorial(unsigned zahl) {
+	if (zahl <= 1) {
+		return 1;
+	}
+	return factorial(zahl - 1) * zahl;
+}
 
 SUITE(describe_factorial)
 {
