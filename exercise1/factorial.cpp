@@ -1,5 +1,5 @@
 #include <cmath>
-#include <UnitTest++ .h>
+#include <unittest++/UnitTest++.h> // for ubuntu
 
 unsigned factorial(unsigned n);
 
