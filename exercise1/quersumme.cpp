@@ -1,7 +1,7 @@
 #include <cmath>
 #include <unittest++/UnitTest++.h>
 
-unsigned int quersumme(unsigned zahl) {
+unsigned int checksum(unsigned zahl) {
 	int sum = 0;
 	
 	while ( zahl > 0 ) {
@@ -12,15 +12,15 @@ unsigned int quersumme(unsigned zahl) {
 	return sum;
 }
 
-SUITE(describe_quersumme)
+SUITE(describe_checksum)
 {
-	TEST(quersumme_of_12_should_be_3)
+	TEST(checksum_of_12_should_be_3)
 	{
-		CHECK_EQUAL(3, quersumme(12));
+		CHECK_EQUAL(3, checksum(12));
 	}
-	TEST(quersumme_of_555_should_be_15)
+	TEST(checksum_of_555_should_be_15)
 	{
-		CHECK_EQUAL(15, quersumme(555));
+		CHECK_EQUAL(15, checksum(555));
 	}
 }
 int main()
