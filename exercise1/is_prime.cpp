@@ -17,7 +17,7 @@ SUITE(describe_is_prime)
 {
 	TEST(is_prime_of_3_should_be_true)
 	{
-		CHECK_EQUAL(true, is_prime(3));
+		CHECK_EQUAL(true, is_prime(2));
 	}
 	TEST(is_prime_of_6_should_be_false)
 	{
