@@ -1,25 +1,24 @@
 #include <cmath>
 #include <unittest++/UnitTest++.h>
 
-unsigned int factorial(unsigned zahl) {
-	if (zahl <= 1) {
-		return 1;
-	}
-	return factorial(zahl - 1) * zahl;
+double fract (double n) { 
+	double bet = fabs (n); 
+	unsigned gan = floor (bet); 
+	double gk = bet - gan; return gk; 
 }
 
-SUITE(describe_factorial)
-{
-	TEST(factorial_of_zero_should_be_1)
-	{
-		CHECK_EQUAL(1, factorial(0));
-	}
-	TEST(factorial_of_should_be_24)
-	{
-		CHECK_EQUAL(24, factorial(4));
-	}
+SUITE(describe_fract) {
+
+TEST(fract_of_1_25632573238_should_be_0_25632) { 
+	CHECK_CLOSE(0.25632,fract(1.25632573238),0.00001); 
+} 
+TEST(fract_of_40_01246_should_be_0_01246) { 
+	CHECK_CLOSE(0.01246,fract(40.01246),0.00001); 
+} 
+TEST(fract_of_minus_999_9999995_should_be_0_99999) { 
+	CHECK_CLOSE(0.99999,fract(-999.9999995),0.00001); 
 }
-int main()
-{
-	return UnitTest::RunAllTests();
+}
+int main() { 
+	return UnitTest :: RunAllTests (); 
 }
