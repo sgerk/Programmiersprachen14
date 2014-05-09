@@ -15,9 +15,13 @@ bool is_prime(unsigned zahl)
 
 SUITE(describe_is_prime)
 {
-	TEST(is_prime_of_3_should_be_true)
+	TEST(is_prime_of_2_should_be_true)
 	{
 		CHECK_EQUAL(true, is_prime(2));
+	}
+	TEST(is_prime_of_3_should_be_true)
+	{
+		CHECK_EQUAL(true, is_prime(3));
 	}
 	TEST(is_prime_of_6_should_be_false)
 	{
